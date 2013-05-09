@@ -1,0 +1,4 @@
+Phrase en français.
+Avec des accents.
+Ephémère
+
