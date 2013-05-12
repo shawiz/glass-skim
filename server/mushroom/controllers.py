@@ -9,8 +9,7 @@ from mushroom.summary import SummaryTool
 @app.route('/postImage', methods=['POST'])
 def postImage():
     image_file = request.files['file']
-#    f.save('/var/www/uploads/uploaded_file.jpg')
-    text = "Hello glass"
+    text = "Hello Glass"
     tools = pyocr.get_available_tools()[:]
     if len(tools) > 0:
         text = tools[0].image_to_string(Image.open(image_file), lang='eng', psm='6', builder=builders.TextBuilder())
@@ -20,11 +19,11 @@ def postImage():
     summary = st.get_summary(text, sentences_dic)
 
     redis.publish('notifications', summary)
-    print "========================================="
+    print "=========================================\n"
     print text
-    print "========================================="
+    print "=========================================\n"
     print summary
-    print "========================================="
+    print "=========================================\n"
     print "published"
     return ""
 

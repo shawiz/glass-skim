@@ -38,19 +38,11 @@ var app = {
 };
 
 function captureImage() {
-    navigator.camera.getPicture(onSuccess, onFail, {
+    navigator.camera.getPicture(uploadPhoto, onFail, {
         quality: 50,
         destinationType: Camera.DestinationType.FILE_URI,
         allowEdit: false
     });
-}
-
-function onSuccess(imageData) {
-    console.log(imageData);
-    // $.post('http://192.168.1.143:5000/postText', {imageData: imageData}, function() {
-    //     console.log('uploaded');
-    // });
-    uploadPhoto(imageData);
 }
 
 function onFail(message) {
@@ -62,7 +54,6 @@ function uploadPhoto(imageURI) {
     options.fileKey = "file";
     options.fileName = imageURI.substr(imageURI.lastIndexOf('/') + 1);
     options.mimeType = "image/jpeg";
-
     var ft = new FileTransfer();
     ft.upload(imageURI, encodeURI("http://192.168.1.143:5000/postImage"),
         onUploadSuccess, onUploadFail, options);
