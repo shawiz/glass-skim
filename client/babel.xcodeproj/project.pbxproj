@@ -41,6 +41,11 @@
 		30A0434914DC770100060A13 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30A0434614DC770100060A13 /* Localizable.strings */; };
 		30E5649213A7FCAF007403D8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E5649113A7FCAF007403D8 /* CoreMedia.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC414816E50CA1004E6F35 /* icon-72@2x.png */; };
+		4BD4CAFB173FADA400636B2F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD4CAFA173FADA400636B2F /* Default-568h@2x.png */; };
+		4BD4CAFD173FAE3000636B2F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD4CAFC173FAE3000636B2F /* Default.png */; };
+		4BD4CAFF173FAE3200636B2F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD4CAFE173FAE3200636B2F /* Default@2x.png */; };
+		4BD4CB01173FB9D500636B2F /* icon-57-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD4CB00173FB9D500636B2F /* icon-57-2x.png */; };
+		4BD4CB03173FB9D800636B2F /* icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD4CB02173FB9D800636B2F /* icon-57.png */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
@@ -67,7 +72,7 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* babel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = babel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* Glass Skim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Glass Skim.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1F766FDD13BBADB100FB74C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		1F766FE013BBADB100FB74C0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Localizable.strings; sourceTree = "<group>"; };
@@ -103,6 +108,11 @@
 		30E5649113A7FCAF007403D8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		30FC414816E50CA1004E6F35 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72@2x.png"; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* babel-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "babel-Prefix.pch"; sourceTree = "<group>"; };
+		4BD4CAFA173FADA400636B2F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4BD4CAFC173FAE3000636B2F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4BD4CAFE173FAE3200636B2F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4BD4CB00173FB9D500636B2F /* icon-57-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-57-2x.png"; sourceTree = "<group>"; };
+		4BD4CB02173FB9D800636B2F /* icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-57.png"; sourceTree = "<group>"; };
 		5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* babel-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "babel-Info.plist"; path = "../babel-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
@@ -152,7 +162,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* babel.app */,
+				1D6058910D05DD3D006BFB54 /* Glass Skim.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,6 +186,11 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				4BD4CB02173FB9D800636B2F /* icon-57.png */,
+				4BD4CB00173FB9D500636B2F /* icon-57-2x.png */,
+				4BD4CAFE173FAE3200636B2F /* Default@2x.png */,
+				4BD4CAFC173FAE3000636B2F /* Default.png */,
+				4BD4CAFA173FADA400636B2F /* Default-568h@2x.png */,
 				F840E1F0165FE0F500CFE078 /* config.xml */,
 				301BF56E109A69640062928A /* www */,
 				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
@@ -313,7 +328,7 @@
 			);
 			name = babel;
 			productName = babel;
-			productReference = 1D6058910D05DD3D006BFB54 /* babel.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* Glass Skim.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -386,6 +401,11 @@
 				3088BBC2154F3926009F9C59 /* Default~iphone.png in Resources */,
 				D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */,
 				30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */,
+				4BD4CAFB173FADA400636B2F /* Default-568h@2x.png in Resources */,
+				4BD4CAFD173FAE3000636B2F /* Default.png in Resources */,
+				4BD4CAFF173FAE3200636B2F /* Default@2x.png in Resources */,
+				4BD4CB01173FB9D500636B2F /* icon-57-2x.png in Resources */,
+				4BD4CB03173FB9D800636B2F /* icon-57.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,7 +501,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "babel/babel-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = babel;
+				PRODUCT_NAME = "Glass Skim";
 				PROVISIONING_PROFILE = "98162265-DD54-40AA-A3E6-819183D038A4";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "98162265-DD54-40AA-A3E6-819183D038A4";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -502,7 +522,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "babel/babel-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = babel;
+				PRODUCT_NAME = "Glass Skim";
 				PROVISIONING_PROFILE = "98162265-DD54-40AA-A3E6-819183D038A4";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "98162265-DD54-40AA-A3E6-819183D038A4";
 				TARGETED_DEVICE_FAMILY = "1,2";

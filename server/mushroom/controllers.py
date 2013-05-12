@@ -13,18 +13,16 @@ def postImage():
     tools = pyocr.get_available_tools()[:]
     if len(tools) > 0:
         text = tools[0].image_to_string(Image.open(image_file), lang='eng', psm='6', builder=builders.TextBuilder())
-
+        text = " ".join(text.split())
     st = SummaryTool()
     sentences_dic = st.get_senteces_ranks(text)
     summary = st.get_summary(text, sentences_dic)
 
-    redis.publish('notifications', summary)
+    redis.publish('notifications', "%s." % summary)
     print "=========================================\n"
     print text
     print "=========================================\n"
     print summary
-    print "=========================================\n"
-    print "published"
     return ""
 
 
