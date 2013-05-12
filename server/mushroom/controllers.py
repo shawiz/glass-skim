@@ -3,18 +3,28 @@ from pyocr import pyocr
 from ocr import builders
 from flask import render_template, request, redirect, Response
 from mushroom import app, redis
+from mushroom.summary import SummaryTool
 
 
 @app.route('/postImage', methods=['POST'])
 def postImage():
     image_file = request.files['file']
 #    f.save('/var/www/uploads/uploaded_file.jpg')
-    text = "hello"
+    text = "Hello glass"
     tools = pyocr.get_available_tools()[:]
     if len(tools) > 0:
         text = tools[0].image_to_string(Image.open(image_file), lang='eng', psm='6', builder=builders.TextBuilder())
-    redis.publish('notifications', text)
+
+    st = SummaryTool()
+    sentences_dic = st.get_senteces_ranks(text)
+    summary = st.get_summary(text, sentences_dic)
+
+    redis.publish('notifications', summary)
+    print "========================================="
     print text
+    print "========================================="
+    print summary
+    print "========================================="
     print "published"
     return ""
 
