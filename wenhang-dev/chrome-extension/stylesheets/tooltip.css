@@ -1,0 +1,11 @@
+.tip {
+	width: 212px;
+	padding-top: 37px;
+	overflow: hidden;
+	display: none;
+	position: absolute;
+	z-index: 500;
+	background: transparent url('chrome-extension://__MSG_@@extension_id__/stylesheets/images/toolTip.png') no-repeat top;}
+	
+.tipMid {background: transparent url('chrome-extension://__MSG_@@extension_id__/stylesheets/images/tipMid.png') repeat-y; padding: 0 25px 20px 25px;}
+.tipBtm {background: transparent url('chrome-extension://__MSG_@@extension_id__/stylesheets/images/tipBtm.png') no-repeat bottom; height: 32px;}

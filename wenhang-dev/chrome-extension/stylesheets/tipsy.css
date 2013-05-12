@@ -1,0 +1,9 @@
+.defaultTheme {
+    background: none repeat scroll 0 0 #555555;
+    border: 2px solid #444444;
+    border-radius: 12px 12px 12px 0;
+    box-shadow: 2px 2px 5px #111111;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 6px 12px;
+}
