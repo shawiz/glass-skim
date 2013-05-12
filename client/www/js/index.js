@@ -46,6 +46,9 @@ function captureImage() {
 }
 
 function onSuccess(imageData) {
+    $.post('http://192.168.1.143:5000/postText', {imageData: imageData}, function() {
+        console.log('uploaded');
+    });
 }
 
 function onFail(message) {

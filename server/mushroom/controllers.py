@@ -7,14 +7,16 @@ from mushroom.utils.jsonify import jsoned
 @jsoned
 def get():
     return render_template('index.html')
-  
+
 
 @app.route("/test")
 def get():
     return render_template('index.html')
 
 
-@app.route('/post', methods=['POST'])
-@jsoned
+@app.route('/postText', methods=['POST'])
 def post():
-    pass
+    print "roger that"
+    text = request.form.get('imageData')
+    print text
+    return ""
