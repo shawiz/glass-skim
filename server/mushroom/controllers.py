@@ -6,7 +6,7 @@ def postText():
     print "wait..."
     text = request.form.get('imageData')
     print text
-    redis.publish('notifications', "Hello!")
+    redis.publish('notifications', text)
     print "published"
     return ""
 
@@ -17,7 +17,7 @@ def event_stream():
     for message in pubsub.listen():
         print message
         yield 'data: %s\n\n' % message['data']
- 
+
 
 @app.route('/post', methods=['POST'])
 def post():

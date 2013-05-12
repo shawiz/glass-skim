@@ -14,8 +14,13 @@ $(document).ready(function() {
 			(iframe.contentDocument.document) ? iframe.contentDocument.document : iframe.contentDocument;
 	}
 
-	changeTextArea("Hello World Playground lets you experiment with how content is displayed\
-on Glass. For more information on how to setup and use the Playground, see Playground\
-Usage. To authorize the Playground to send and receive data from your account, enter\
-your Google");
+	function subscribe() {
+		var source = new EventSource('http://0.0.0.0:5000/stream');
+        source.onmessage = function(event) {
+             changeTextArea(event.data);
+        };
+	}
+
+	subscribe();
+
 });
