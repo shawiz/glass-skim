@@ -1,12 +1,20 @@
+import Image
+from pyocr import pyocr
+from ocr import builders
 from flask import render_template, request, redirect, Response
 from mushroom import app, redis
 
-@app.route('/postText', methods=['POST'])
-def postText():
-    print "wait..."
-    text = request.form.get('imageData')
-    print text
+
+@app.route('/postImage', methods=['POST'])
+def postImage():
+    image_file = request.files['file']
+#    f.save('/var/www/uploads/uploaded_file.jpg')
+    text = "hello"
+    tools = pyocr.get_available_tools()[:]
+    if len(tools) > 0:
+        text = tools[0].image_to_string(Image.open(image_file), lang='eng', psm='6', builder=builders.TextBuilder())
     redis.publish('notifications', text)
+    print text
     print "published"
     return ""
 
