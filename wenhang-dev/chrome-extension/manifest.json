@@ -1,15 +1,14 @@
 {
   "manifest_version": 2,
   "name": "Google Glass PlayGround Hack",
-  "description": "This extension displays a \"dislike\" button on Facebook timeline.",
+  "description": "This extension allows you to hack google glass playground.",
   "version": "1.0",
 
 
   "content_scripts": [ {
     "js": [ "./js/jquery-1.7.2.min.js","hack.js"],
     "matches": [ "https://developers.google.com/*", "http://developers.google.com/*", "https://apis.google.com/*"],
-    "run_at": "document_end",
-    "css": ["./stylesheets/tipsy.css"]
+    "run_at": "document_end"
   } ],
 
   
